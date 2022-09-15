@@ -1,0 +1,8 @@
+[Unit]
+Description=SCP IP file from Pi to Laptop
+StopWhenUnneeded=yes
+
+[Service]
+Type=oneshot
+User=student334
+ExecStart=/bin/sh ~/Desktop/cs334files/lib/scpip/scpip.sh

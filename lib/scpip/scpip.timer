@@ -1,0 +1,12 @@
+[Unit]
+Description=Periodically run SCP IP service
+Wants=onwifi.service
+After=onwifi.service
+
+[Timer]
+OnUnitActiveSec=0s
+OnCalendar=*:0/10
+Unit=scpip.service
+
+[Install]
+WantedBy=scpip.target
